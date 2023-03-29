@@ -42,7 +42,7 @@ a {
   font-size: 18px;
   width: 0;
   padding: 0;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 #search-box:hover #search-text {
   padding: 5px 0 5px 10px;
@@ -99,12 +99,18 @@ a {
   text-align: center;
   color: #171100;
 }
+.header .nav .list:hover li a {
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+}
 .btn-header {
   color: #fff;
 }
 .btn-header:hover {
   cursor: pointer;
   color: var(--second-color);
+  transition: all 0.5s ease-in-out;
+  font-size: 30px;
 }
 
 .list a,
@@ -215,6 +221,9 @@ img {
   border: 20px;
   color: #000;
   background-color: var(--second-color);
+  padding: 20px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
 }
 .header .fa-user:hover {
   color: #000;
@@ -621,20 +630,20 @@ img {
 .support-customer .row .footer-social-contact:hover {
   color: var(--second-color);
 }
-.support-customer .row a {
+.support-customer .row .footer-social-contact {
   position: relative;
   display: flex;
   line-height: 30px;
   font-size: 15px;
 }
-
-.row .footer-social-contact::before a {
+.support-customer .row li {
+}
+.column-1 a::before {
+  content: "";
   position: absolute;
-  display: inline-block;
-  width: 6px;
+  width: 20px;
   height: 6px;
   transform: translateY(-50%);
-  content: "";
   background-color: #fed700;
   transition: all 0.4s ease;
 }
@@ -657,6 +666,7 @@ img {
   padding: 30px 50px 30px 0;
   text-align: center;
   line-height: 30px;
+  font-family: var(--primary-font);
 }
 
 .footer .footer-title {
